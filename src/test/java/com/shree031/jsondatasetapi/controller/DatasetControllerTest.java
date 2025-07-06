@@ -1,7 +1,6 @@
-package com.shree031.jsondatasetapi;
+package com.shree031.jsondatasetapi.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.shree031.jsondatasetapi.controller.DatasetController;
 import com.shree031.jsondatasetapi.dto.RecordDto;
 import com.shree031.jsondatasetapi.service.DatasetService;
 import org.junit.jupiter.api.BeforeEach;
