@@ -16,16 +16,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class DatasetServiceImpl implements DatasetService {
 
     private final DatasetRecordRepository repository;
     private final ObjectMapper objectMapper;
 
-    public DatasetServiceImpl(DatasetRecordRepository repository, ObjectMapper objectMapper) {
-        this.repository = repository;
-        this.objectMapper = objectMapper;
-    }
 
     @Override
     public RecordDto insertRecord(String datasetName, RecordDto dto) {

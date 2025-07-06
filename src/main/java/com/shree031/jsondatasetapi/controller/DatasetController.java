@@ -1,7 +1,6 @@
 package com.shree031.jsondatasetapi.controller;
 
 import com.shree031.jsondatasetapi.dto.RecordDto;
-import com.shree031.jsondatasetapi.exception.CustomException;
 import com.shree031.jsondatasetapi.service.DatasetService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -15,15 +14,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 @RequestMapping("/api/dataset")
 public class DatasetController {
 
     private final DatasetService datasetService;
-
-    public DatasetController(DatasetService datasetService) {
-        this.datasetService = datasetService;
-    }
 
     @Operation(summary = "Insert a JSON record", description = "Inserts a JSON record into the given dataset")
     @ApiResponses(value = {
