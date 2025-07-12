@@ -181,12 +181,6 @@ Use either:
 
 ---
 
-## 📄 License
-
-This project is for assessment purposes.
-
----
-
 ## ✨ Author
 
 Made with ❤️ by Shreedevi Patil
